@@ -49,8 +49,9 @@ print(f"MSE Random Forest: {mse_rf}")
 
 # Comparing 
 table_cmpr = pd.DataFrame()
-table_cmpr["Vendas Reais"] = y_train
+table_cmpr["Vendas Reais"] = y_test
 table_cmpr["Previsão Random"] = test_pred_rf
+table_cmpr["Previsão Linear"] = test_pred_lin
 table_cmpr = table_cmpr.reset_index(drop = True)
 
 sns.lineplot(data = table_cmpr)
