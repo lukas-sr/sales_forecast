@@ -46,3 +46,16 @@ mse_rf = metrics.mean_squared_error(y_test, test_pred_rf)
 
 print(f"R² Random Forest: {r2_rf}")
 print(f"MSE Random Forest: {mse_rf}")
+
+# Comparing 
+table_cmpr = pd.DataFrame()
+table_cmpr["Vendas Reais"] = y_train
+table_cmpr["Previsão Random"] = test_pred_rf
+table_cmpr = table_cmpr.reset_index(drop = True)
+
+sns.lineplot(data = table_cmpr)
+plt.show()
+
+# RandomForest.predict(TV, Radio, Jornal) -> Complete forecast for sales
+
+# print(randomforest.feature_importances_) -> each column grade
