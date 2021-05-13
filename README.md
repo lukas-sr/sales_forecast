@@ -1,7 +1,5 @@
 # Sales Forecast
 
-Sales Forecast for 
-
 ### First step
 Download the "advertising.csv" file in this repo 
 
