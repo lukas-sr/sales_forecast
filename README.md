@@ -1,4 +1,5 @@
 # Sales Forecast
+Forecast for Sales based in advertising campaign
 
 ### First step
 Download the "advertising.csv" file in this repo 
